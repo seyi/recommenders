@@ -44,7 +44,7 @@ install_requires = [
     "jinja2>=2,<3.1",
     "requests>=2.0.0,<3",
     "cornac>=1.1.2,<1.15.2;python_version<='3.7'",
-    "cornac>=1.15.2,<2;python_version>='3.8'",  # After 1.15.2, Cornac requires python 3.8
+    "cornac>=1.15.2,<2;python_version>='3.10.0'",  # After 1.15.2, Cornac requires python 3.8
     "retrying>=1.3.3",
     "pandera[strategies]>=0.6.5",  # For generating fake datasets
     "scikit-surprise>=1.0.6",
@@ -130,7 +130,7 @@ setup(
     "machine learning python spark gpu",
     install_requires=install_requires,
     package_dir={"recommenders": "recommenders"},
-    python_requires=">=3.6, <3.10",
+    python_requires=">=3.6, <3.11",
     packages=find_packages(
         where=".",
         exclude=["contrib", "docs", "examples", "scenarios", "tests", "tools"],
